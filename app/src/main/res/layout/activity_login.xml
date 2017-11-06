@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="20dp" >
+
+    <ImageView
+        android:id="@+id/projeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext2"
+        android:ems="10"
+        android:hint="Kullanıcı Adı"
+        android:inputType="textPersonName"
+        android:textColor="#969696"
+        android:textColorHint="#C7C7CD"
+        android:textCursorDrawable="@null"
+        android:layout_marginTop="126dp"
+
+        android:layout_below="@+id/projeImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext2"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textColor="#969696"
+        android:textColorHint="#C7C7CD"
+        android:textCursorDrawable="@null" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btnpress"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:text="GİRİŞ YAP" />
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordEditText"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:gravity="center"
+
+        android:text="Üye değil misiniz? Kayıt Ol"
+        android:onClick="onClick"
+        android:textColor="#969696"
+        android:textSize="14sp" />
+
+</RelativeLayout>
